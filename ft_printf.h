@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:31:25 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/07 16:58:28 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/14 14:00:53 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 
 #include "libft/libft.h"
+#include <stdarg.h>
 
 int	ft_printf(const char *, ...);
 

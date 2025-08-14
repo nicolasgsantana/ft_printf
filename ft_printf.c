@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:30:57 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/07 17:52:38 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/14 16:19:45 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 int	ft_printf(const char *format, ...)
 {
-	return (0);
+	int	lenght;
+	va_list	args;
+
+	args = 	va_start(args, format);
+	lenght = 0;
+	while (format[lenght])
+	{
+		if (format[lenght])
+	}
+	va_arg(args, int);
+	va_end(args);
 }
