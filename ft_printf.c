@@ -6,7 +6,7 @@
 /*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:30:57 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/15 09:15:36 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/15 14:09:42 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,27 @@ int	ft_printf(const char *format, ...)
 	i = 0;
 	while (format[i])
 	{
-		if (format[i++] == '%')
-			if (format[i++] == 's')
+		if (format[i] == '%')
+		{
+			i++;
+			if (format[i] == 'c')
+				ft_putchar_fd(va_arg(args, int), STDOUT_FILENO);
+			else if (format[i] == 's')
 				ft_putstr_fd(va_arg(args, char *), STDOUT_FILENO);
+			// else if (format[i] == 'p')
+			// 	// run something
+			else if (format[i] == 'd' || format[i] == 'i')
+				ft_putnbr_fd(va_arg(args, int), STDOUT_FILENO);
+			else if (format[i] == 'u')
+				ft_putunbr_fd(va_arg(args, unsigned int), STDOUT_FILENO);
+			// else if (format[i] == 'x')
+			// 	// run something
+			// else if (format[i] == 'X')
+			// 	// run something
+			else if (format[i] == '%')
+				ft_putchar_fd('%', STDOUT_FILENO);
+			i++;
+		}
 		ft_putchar_fd(format[i++], STDOUT_FILENO);
 	}
 	va_end(args);
