@@ -13,7 +13,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(HEADER) $(OBJ)
-	$(MAKE) bonus -C $(LIBFT)
+	$(MAKE) all -C $(LIBFT)
 	$(CC) $(FLAGS) -c $(SRC)
 	ar rcs $(NAME) *.o $(LIBFT)/*.o
 
