@@ -6,7 +6,7 @@
 /*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:31:25 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/15 09:18:18 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/15 14:02:20 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_printf(const char *format, ...);
+int		ft_printf(const char *format, ...);
+void	ft_putunbr_fd(unsigned int n, int fd);
 
 #endif
