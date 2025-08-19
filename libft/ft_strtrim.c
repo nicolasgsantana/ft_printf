@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:19:08 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/29 15:06:56 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:03:26 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *str);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+#include "libft.h"
 
 static int	ft_match_set_from_begining(const char *str, const char *set)
 {

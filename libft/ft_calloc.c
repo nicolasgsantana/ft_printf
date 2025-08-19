@@ -3,18 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 18:29:55 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/24 18:03:15 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:01:23 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <stdint.h>
-
-void	ft_bzero(void *s, size_t n);
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

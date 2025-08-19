@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 13:54:36 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/24 17:58:22 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:01:19 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-void	*ft_memset(void *s, int c, size_t n);
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

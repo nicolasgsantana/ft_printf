@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:27:44 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/23 11:56:10 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 09:55:50 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static size_t	ft_intlen(int n)
 {

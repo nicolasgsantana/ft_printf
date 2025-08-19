@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 12:04:23 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/29 13:15:31 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:00:44 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	ft_putstr_fd(char *s, int fd);
+#include "libft.h"
 
 static size_t	ft_intlen(int n)
 {
