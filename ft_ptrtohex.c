@@ -6,7 +6,7 @@
 /*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 15:34:01 by nicolas           #+#    #+#             */
-/*   Updated: 2025/08/19 15:37:46 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/19 16:11:42 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_ptrtohex(void *ptr)
 
 	hex_chars = "0123456789abcdef";
 	n = (uintptr_t)ptr;
-	hex_len = ft_uitohex_len(n);
+	hex_len = ft_uiptohex_len(n);
 	converted = malloc((hex_len  + 1) * sizeof(char));
 	if (!converted)
 		return (NULL);
