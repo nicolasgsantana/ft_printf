@@ -2,7 +2,7 @@ NAME = libftprintf.a
 
 FLAGS = -Wall -Wextra -Werror
 
-SRC = ft_printf.c ft_putunbr_fd.c ft_uitohex.c
+SRC = ft_printf.c ft_putunbr_fd.c ft_uitohex.c ft_ptrtohex.c
 LIBFT = ./libft
 
 HEADER = ft_printf.h
