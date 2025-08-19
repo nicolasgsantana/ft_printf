@@ -6,7 +6,7 @@
 /*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:31:25 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/15 14:02:20 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/19 09:47:19 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@
 
 int		ft_printf(const char *format, ...);
 void	ft_putunbr_fd(unsigned int n, int fd);
+char	*ft_uitohex(unsigned int n);
 
 #endif
