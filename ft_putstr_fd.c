@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:55:34 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/24 18:04:11 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:00:40 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-size_t	ft_strlen(const char *str);
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

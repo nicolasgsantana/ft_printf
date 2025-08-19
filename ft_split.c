@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 18:26:28 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/07/24 18:04:50 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:00:34 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+#include "libft.h"
 
 static int	ft_count_strings(char const *str, char delimiter)
 {
