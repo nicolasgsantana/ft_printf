@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:31:25 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/19 15:38:05 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/20 10:03:05 by nde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdarg.h>
 
 int		ft_printf(const char *format, ...);
-void	ft_putunbr_fd(unsigned int n, int fd);
 char	*ft_uitohex(unsigned int n);
 char	*ft_ptrtohex(void *ptr);
 

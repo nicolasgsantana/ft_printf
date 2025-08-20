@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:30:57 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/15 14:09:42 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/20 10:03:30 by nde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	ft_printf(const char *format, ...)
 			// 	// run something
 			else if (format[i] == 'd' || format[i] == 'i')
 				ft_putnbr_fd(va_arg(args, int), STDOUT_FILENO);
-			else if (format[i] == 'u')
-				ft_putunbr_fd(va_arg(args, unsigned int), STDOUT_FILENO);
+			// else if (format[i] == 'u')
+			// 	// run something
 			// else if (format[i] == 'x')
 			// 	// run something
 			// else if (format[i] == 'X')
