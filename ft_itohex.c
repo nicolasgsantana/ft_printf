@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uitohex.c                                       :+:      :+:    :+:   */
+/*   ft_itohex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nicolas <nicolas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 09:14:25 by nicolas           #+#    #+#             */
-/*   Updated: 2025/08/19 10:44:04 by nicolas          ###   ########.fr       */
+/*   Updated: 2025/08/20 13:53:29 by nde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static size_t	ft_uitohex_len(unsigned int n)
+static size_t	ft_uitohex_len(uintptr_t n)
 {
 	size_t	size;
 
@@ -27,13 +27,16 @@ static size_t	ft_uitohex_len(unsigned int n)
 	return (size);
 }
 
-char	*ft_uitohex(unsigned int n)
+char	*ft_itohex(uintptr_t n, bool uppercase)
 {
 	char	*hex_chars;
 	char	*converted;
 	size_t	hex_len;
 
-	hex_chars = "0123456789abcdef";
+	if (!uppercase)
+		hex_chars = "0123456789abcdef";
+	else
+		hex_chars = "0123456789ABCDEF";
 	hex_len = ft_uitohex_len(n);
 	converted = malloc((hex_len  + 1) * sizeof(char));
 	if (!converted)
