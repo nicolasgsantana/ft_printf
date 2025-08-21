@@ -6,7 +6,7 @@
 /*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 15:30:57 by nde-sant          #+#    #+#             */
-/*   Updated: 2025/08/20 15:18:00 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/21 11:19:13 by nde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	printflag(va_list *args, char flag, int *len)
 		if (!arg)
 		{
 			ft_putstr_fd("(nil)", STDOUT_FILENO);
-			len += 5;
+			*len += 5;
 		}
 		else
 		{
