@@ -6,7 +6,7 @@
 /*   By: nde-sant <nde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/19 09:14:25 by nicolas           #+#    #+#             */
-/*   Updated: 2025/08/20 13:53:29 by nde-sant         ###   ########.fr       */
+/*   Updated: 2025/08/21 11:23:47 by nde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static size_t	ft_uitohex_len(uintptr_t n)
 	size = 0;
 	if (n == 0)
 		size++;
-	while(n > 0)
+	while (n > 0)
 	{
 		n /= 16;
 		size++;
@@ -38,7 +38,7 @@ char	*ft_itohex(uintptr_t n, bool uppercase)
 	else
 		hex_chars = "0123456789ABCDEF";
 	hex_len = ft_uitohex_len(n);
-	converted = malloc((hex_len  + 1) * sizeof(char));
+	converted = malloc((hex_len + 1) * sizeof(char));
 	if (!converted)
 		return (NULL);
 	converted[hex_len--] = '\0';
